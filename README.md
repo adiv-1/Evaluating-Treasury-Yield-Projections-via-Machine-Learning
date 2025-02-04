@@ -1,3 +1,7 @@
+# Evaluating Treasury Yield Projections via Machine Learning
+
+**Project Description:** This project is focused on comparing the prediction evaluation of two machine learning models (linear regression and LSTM) and their individual abilities in predicting the daily U.S. Treasury 10-Year Yield rate.
+
 ## Instructions to create a conda enviornment
 Building the coda environment to ensure dependencies are managed efficiently.
 ```
