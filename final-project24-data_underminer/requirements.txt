@@ -1,0 +1,12 @@
+pandas==1.5.3
+numpy
+matplotlib
+seaborn
+scikit-learn
+statsmodels
+tensorflow
+yfinance
+fredapi
+pybea
+beautifulsoup4
+requests
