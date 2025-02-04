@@ -1,8 +1,8 @@
 # Evaluating Treasury Yield Projections via Machine Learning
 
-**Project Description:** This project is focused on comparing the prediction evaluation of two machine learning models (linear regression and LSTM) and their individual abilities in predicting the daily U.S. Treasury 10-Year Yield rate.
+**Project Description:** This project is focused on comparing the prediction evaluation of two machine learning models (linear regression and LSTM) and their individual abilities in predicting the daily U.S. Treasury 10-year Yield rate.
 
-## Instructions to create a conda enviornment
+## Instructions to create a conda environment
 Building the coda environment to ensure dependencies are managed efficiently.
 ```
 conda create -n treasury_env python=3.11 -y cond activate treasury_env
@@ -10,7 +10,7 @@ conda create -n treasury_env python=3.11 -y cond activate treasury_env
 
 ## Instructions on how to install the required libraries
 
-Install the python libraries either by installing the requirements.txt file, or by installing the libraries individually:
+Install the Python libraries either by installing the requirements.txt file or by installing the libraries individually:
 
 • Installation via requirements.txt
 ```
@@ -29,20 +29,20 @@ cd src
 ```
 python get_data.py
 ```
-The data fetching process, first scrapes data from the U.S. Department of Treasury, and then calls on four other data sources (BEA, Yahoo Finance, BLS, and FRED) via calling an API method. This will:
+The data fetching process first scrapes data from the U.S. Department of Treasury and then calls on four other data sources (BEA, Yahoo Finance, BLS, and FRED) via calling an API method. This will:
 - Scrape treasury yield data from the U.S. Department of Treasury.
 - Fetch economic indicators like CPI, GDP, and Federal Funds Rate from FRED.
 - Retrieve commodity and financial data from Yahoo Finance.
 - Extract labor force participation rate data from BLS.
 - Fetch data on private inventories, residential spending, and intellectual property products from BEA.
 
-**PLEASE NOTE**, that the entire data retrieval process can take OVER **10 MINUTES**, but code will work! I strongly advise to replace the API Keys listed in the scripts with your own actual API keys for FRED, BEA, and BLS. However, for the purposes of this project, you may utilize mine listed in the python file for the sole purpose of running the
+**PLEASE NOTE**, that the entire data retrieval process can take OVER **10 MINUTES**, but code will work! I strongly advise replacing the API Keys listed in the scripts with your own actual API keys for FRED, BEA, and BLS. However, for the purposes of this project, you may utilize mine listed in the Python file for the sole purpose of running the
 'get_data.py' script.
 
 
 ## Instructions on how to clean the data
 
-To clean and preprocess the raw data please run the 'clean_data.py' script:
+To clean and preprocess the raw data, please run the 'clean_data.py' script:
 ```
 python clean_data.py
 ```
