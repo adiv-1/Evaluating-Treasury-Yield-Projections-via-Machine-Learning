@@ -86,7 +86,7 @@ treasury_output_file = os.path.join(output_dir, "Treasury_Data_Raw.csv")
 filtered_treasury_data.to_csv(treasury_output_file, index=False)
 print(f"Data saved to {treasury_output_file}")
 # FRED Data Retrieval
-fred = Fred(api_key="75ae34cdbd9335511b02e5c15baeef63")
+fred = Fred(api_key=INSERT_API_KEY)
 cpi_data = fred.get_series("CPIAUCSL",
                            start_date=start_date,
                            end_date=end_date)
@@ -142,7 +142,7 @@ yf_output_file = os.path.join(output_dir, "YF_Data_Raw.csv")
 adj_close_df.to_csv(yf_output_file, index=False)
 print(f"Data saved to {yf_output_file}")
 # BEA Data Retrieval
-BEA_API_KEY = "B2820B8E-5A02-467B-9163-CCF0378D02FB"
+BEA_API_KEY = INSERT_API_KEY
 bea_client = BEAC(api_key=BEA_API_KEY)
 dataset_list = bea_client.get_dataset_list()
 url = "https://apps.bea.gov/api/data/"
@@ -208,7 +208,7 @@ BEA_final_csv_path = os.path.join(output_dir, "BEA_Data_Raw.csv")
 BEA_final_df.to_csv(BEA_final_csv_path, index=False)
 print(f"Data saved to {BEA_final_csv_path}")
 # BLS Data Retrieval
-BLS_API_KEY = "7a481d22b08444cea00a37fae2aa424d"
+BLS_API_KEY = INSERT_API_KEY
 url = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
 series_id = "LNS11300000"
 labor_force_df = pd.DataFrame()
